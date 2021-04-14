@@ -2,11 +2,11 @@ let counter = 0
 
 chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
 	if (request == "Action") {
-		hogehoge();
+		soltextcounter();
 	}
 });
 
-function hogehoge() {
+function soltextcounter() {
     if(counter == 0){    
         const script = document.createElement('script');
         const code = '(' + function () {
